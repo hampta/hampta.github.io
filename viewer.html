@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+        }
+        #model-viewer {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+        }
+    </style>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+<body>
+<model-viewer src="./models/isaev.glb" camera-controls auto-rotate exposure="0.74" environment-image="./models/pillars_1k.hdr"></model-viewer>
+</body>
+</html>
