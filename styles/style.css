@@ -8,7 +8,7 @@ a {
 }
 #myVideo {
     top: 50%;
-    width: 1980px;
+    height: fill;
     transform: translate(-50%, -50%);
     opacity: 25%;
     left: 50%;
@@ -50,11 +50,12 @@ a {
 }
 
 .links {
+    align-items: center;
     position: relative;
-    word-spacing: 45px;
-    top: 525px;
-    font-size: 2em;
-    line-height: 50px;
+    word-spacing: 65px;
+    top: 575px;
+    font-size: 2.5em;
+    line-height: 80px;
 }
 
 .style_links {
