@@ -8,7 +8,7 @@ a {
 }
 #myVideo {
     top: 50%;
-    height: fill;
+    height: -webkit-fill-available;
     transform: translate(-50%, -50%);
     opacity: 25%;
     left: 50%;
