@@ -1,45 +1,70 @@
 <!DOCTYPE html>
 <html>
+<!-- РУССКИЙ ВОЕННЫЙ КОРАБЛЬ ИДИ НАХУЙ! -->
+<!-- ПУТИН ХУЙЛО! -->
+<!-- Кубник пидарас -->
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link rel="shortcut icon" href="icons/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles/style.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-90W74JN5CB"></script>
-    <script src="https://cdn.jsdelivr.net/npm/save-ukraine@0.18.0/dist/umd/main.js" integrity="sha384-Xn1RAG80M8PZlBQh3r8fUvHY7c8RtuplSnqXOkdJyCxqRsToRwJ1m2FP7vyJo7u/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/save-ukraine@0.18.0/dist/umd/main.js"
+        integrity="sha384-Xn1RAG80M8PZlBQh3r8fUvHY7c8RtuplSnqXOkdJyCxqRsToRwJ1m2FP7vyJo7u/"
+        crossorigin="anonymous"></script>
     <script>
-    Ukraine.save({
-        ribbon: 'TOP_LEFT',
-        hasShadow: true,
-        countries: [],
-    });
-</script>
+        Ukraine.save({
+            ribbon: 'TOP_LEFT',
+            hasShadow: true,
+            countries: [],
+        });
+    </script>
     <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-90W74JN5CB');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-90W74JN5CB');
+    </script>
+    <video id="anthem" controls loop autoplay name="media" preload="auto" hidden>
+        <source src="resources/anthem.mp3" type="audio/mp3">
+    </video>
+    <script>
+        var audio = document.getElementById("anthem");
+        audio.volume = 0.3;
+        var first = true;
+        document.onclick = function () {
+            if (first == true) audio.play()
+            first = false;
+        }
     </script>
     <meta charset="utf-8">
     <title>Hampta</title>
-    <link rel="shortcut icon" href="icons/favicon.png" type="image/png">
-    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-<video autoplay muted loop preload="auto" id="myVideo" poster="video/poster.png">
-    <source src="video/video.webm" type="video/webm" codecs="vp8">
-</video>
-<header>
-    <div class="sign">
-        <span class="fast-flicker">h</span>am<span class="flicker">p</span>ta
+    <video autoplay muted loop preload="auto" id="backgroundVideo" poster="resources/poster.png">
+        <source src="resources/video.webm" type="video/webm" codecs="vp8">
+    </video>
+    <header>
+        <div class="sign">
+            <span class="fast-flicker">h</span>am<span class="flicker">p</span>ta
+        </div>
+        <div class="save-ukraine">
+            <span class="fast-flicker">#Sa</span>ve<span class="flicker">Uk</span>ra<span
+                class="fast-flicker">ine</span>
+        </div>
+    </header>
+    <div class="links">
+        <div class="style_links">
+            <a href="https://t.me/hampta"><span class="flicker_">Telegram</span></a>
+            <a href="https://steamcommunity.com/id/e5moi/"><span class="flicker_">Steam</span></a>
+            <a href="https://steamcommunity.com/tradeoffer/new/?partner=872340426&token=jv41ibwo"><span
+                    class="flicker_">TradeLink</span></a>
+            <a href="https://www.youtube.com/channel/UCXV8fJ0VaUrcdC1XV-Sv7qw"><span class="flicker_">Youtube</span></a>
+            <a href="https://github.com/hampta/"><span class="flicker_">GitHub</span></a>
+            <a href="https://discord.com/users/403972025133301760"><span class="flicker_">Discord</span></a>
+        </div>
     </div>
-</header>
-<div class="links">
-    <div class="style_links">
-        <a href="https://t.me/hampta"><span class="flicker_">Telegram</span></a>
-        <a href="https://steamcommunity.com/id/e5moi/"><span class="flicker_">Steam</span></a>
-        <a href="https://steamcommunity.com/tradeoffer/new/?partner=872340426&token=jv41ibwo"><span class="flicker_">TradeLink</span></a>
-        <a href="https://www.youtube.com/channel/UCXV8fJ0VaUrcdC1XV-Sv7qw"><span class="flicker_">Youtube</span></a>
-        <a href="https://github.com/hampta/"><span class="flicker_">GitHub</span></a>
-        <a href="https://discord.com/users/403972025133301760"><span class="flicker_">Discord</span></a>
-    </div>
-</div>
 </body>
+
 </html>
